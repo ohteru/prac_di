@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    /* 厳密な型チェックオプション */
+    "strict": true,   
+    "target": "es5",
+    "module": "es2015",
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
