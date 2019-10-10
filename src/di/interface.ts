@@ -1,12 +1,15 @@
-export interface ServiceInterface {
+interface ServiceInterface {
   doSomeThing(): void;
 }
 
-export interface ProductInterface {
+interface ProductInterface {
   useSomething(): void;
 }
 
-export const diTypes = {
-  service: Symbol('service'),
-  product: Symbol('product'),
+interface ClientInterface extends ServiceInterface, ProductInterface {}
+
+export {
+  ServiceInterface,
+  ProductInterface,
+  ClientInterface,
 }

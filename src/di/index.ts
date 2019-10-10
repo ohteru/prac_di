@@ -1,16 +1,11 @@
 import 'reflect-metadata';
-import { container } from 'tsyringe';
-import { Client } from './client';
-import { Service } from './service';
-import { Product } from './product';
-import { diTypes } from './interface';
+import { myContainer } from './inversify.config';
+import { diTypes } from './types';
+import { ClientInterface } from './interface';
+
+const ohteru = myContainer.get<ClientInterface>(diTypes.client);
 
 export default () => {
-  container.register(diTypes.service, { useClass: Service });
-  container.register(diTypes.product, { useClass: Product });
-
-
-  const client = container.resolve(Client);
-  client.doSomeThing();
-  client.useSomething();
+  ohteru.doSomeThing();
+  ohteru.useSomething();
 }

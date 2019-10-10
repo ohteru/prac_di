@@ -9,6 +9,7 @@
       "es2016",
       "dom"
     ],
+    "types": ["reflect-metadata"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   }

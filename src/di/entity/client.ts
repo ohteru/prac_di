@@ -1,8 +1,9 @@
-import { injectable, inject } from 'tsyringe';
-import { ServiceInterface, ProductInterface, diTypes } from './interface'
+import { injectable, inject } from 'inversify';
+import { ServiceInterface, ProductInterface, ClientInterface } from '../interface'
+import { diTypes } from '../types';
 
 @injectable()
-export class Client {
+export class Client implements ClientInterface {
   private service: ServiceInterface;
   private product: ProductInterface;
 
