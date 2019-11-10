@@ -2,8 +2,8 @@
   "name": "typescript",
   "version": "1.0.0",
   "main": "src/index.js",
-  "repository": "git@github.com:ohteru/interface_polymorphism.git",
-  "author": "ohteru <arai_da@camobile.com>",
+  "repository": "git@github.com:ohteru/di_practice.git",
+  "author": "ohteru <ohteru.engineer@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
